@@ -35,6 +35,8 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  display: grid;
+  place-items: center;
 }
 
 /* A elements that don't have a class get default styles */
@@ -129,7 +131,25 @@ select {
   background-color: var(--clr-neutral-600);
 }
 
+.padding-1 {
+  padding: 1.75rem;
+}
+
+.border-radius-1 {
+  border-radius: 10px;
+}
+
+.border-radius-2 {
+  border-radius: 15px;
+}
+
 a {
   color: var(--clr-neutral-300);
   text-decoration: none;
+}
+
+main {
+  width: 90vw;
+  display: grid;
+  gap: 1rem;
 }
