@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
 /* Box sizing rules */
 *,
 *::before,
@@ -37,6 +39,7 @@ body {
   line-height: 1.5;
   display: grid;
   place-items: center;
+  font-family: "Outfit", sans-serif;
 }
 
 /* A elements that don't have a class get default styles */
@@ -148,8 +151,37 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color: var(--clr-primary-400);
+}
+
 main {
   width: 90vw;
   display: grid;
   gap: 1rem;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price p {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-top: 2px solid var(--clr-neutral-400);
+  padding-top: 1rem;
+}
+
+footer img {
+  width: 2.5rem;
+  border: 1px solid var(--clr-neutral-300);
+  border-radius: 50%;
 }
